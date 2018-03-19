@@ -1,0 +1,55 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Create User</title>
+</head>
+<body>
+    <div id="header">
+        <h1>CREATE USER DEMO</h1>
+    </div>
+
+    <form id="createUser" method="post" th:action="@{/users/create}">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstName"/></td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastName"/></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob"/></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username"/></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" name="password"/></td>
+            </tr>
+
+            <!--<tr>
+                <td>confirm password:</td>
+                <td><input type="password" name="passwordConfirm"/></td>
+            </tr>-->
+
+            <tr>
+                <td><input id="createUserSubmitButton" type="submit" name="submit" value="submit"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
